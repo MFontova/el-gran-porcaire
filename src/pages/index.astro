@@ -1,0 +1,19 @@
+---
+import CustomButton from "../components/CustomButton.astro";
+import SectionText from "../components/SectionText.astro";
+import Layout from "../layouts/Layout.astro";
+
+const title = "Ampliació de la granja"
+---
+
+<Layout title={title}>
+	<h1>{title}</h1>
+	<SectionText>
+		<p>Ara que ets un home de negocis exitòs i la granja està funcionant de puta mare, decideixes fer una ampliació. Ets un tauró dels negocis i no en tens mai prou.</p>
+		<p>Però com ja saps, aquestes coses necessiten <span class="text-bellpuig-orange font-semibold">esforç</span>, <span class="text-bellpuig-orange font-semibold">suor</span> i <span class="text-bellpuig-orange font-semibold">calers</span>. Aquesta tarda et tocarà esforçar-te, suar i, qui sap, pot ser guanyar calers...</p>
+		<p>Estàs preparat per començar l'ampliació de la granja?</p>
+	</SectionText>
+	<div class="flex justify-center">
+		<CustomButton path="/p01-recaudar">No em fa por res</CustomButton>
+	</div>
+</Layout>
