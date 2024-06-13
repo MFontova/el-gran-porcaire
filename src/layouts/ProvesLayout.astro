@@ -1,15 +1,13 @@
 ---
 import SectionText from "../components/SectionText.astro"
 import Layout from "./Layout.astro"
-import { ViewTransitions } from "astro:transitions"
 
 const { frontmatter } = Astro.props
 ---
 <Layout title={frontmatter.title}>
-  <h1 transition:name="title">{frontmatter.title}</h1>
+  <h1>{frontmatter.title}</h1>
+  <img src={frontmatter.image.url} alt="">
   <SectionText>
     <slot/>
   </SectionText>
 </Layout>
-
-<ViewTransitions/>
