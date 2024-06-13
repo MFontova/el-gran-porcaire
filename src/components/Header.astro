@@ -1,50 +1,11 @@
 ---
-import ChevronLeft from "../icons/chevronLeft.astro";
-import ChevronRight from "../icons/chevronRight.astro"
-
-const pages = await Astro.glob('../pages/*.astro')
-const pagesList: string[] = []
-pages.map((page) => {
-  if(page.url == '') {
-    return pagesList.push('/')
-  }
-  return pagesList.push(page.url!)
-})
-
-const currentPage = Astro.url.pathname
-
-const next = pagesList[pagesList.indexOf(currentPage) + 1]
-
-const prev = pagesList[pagesList.indexOf(currentPage) - 1]
-
-console.log('pages', pagesList)
-console.log('next', next)
-console.log('prev', prev)
-
+import HomeIcon from "../icons/homeIcon.astro";
 ---
 
-<header class="flex justify-between items-center px-3 py-5 bg-bellpuig-black text-bellpuig-orange">
-  {
-    currentPage !== '/' 
-      ? (
-        <a href={prev}>
-          <ChevronLeft/>
-        </a>
-      ) 
-      : (
-        <span class="w-[24px]"></span>
-      )
-  }
-  <p class="font-bold text-xl">El Gran Porcaire</p>
-  {
-    currentPage !== pagesList[pagesList.length - 1]
-      ? (
-        <a href={next}>
-          <ChevronRight/>
-        </a>
-      )
-      : (
-        <span class="w-[24px]"></span>
-      )
-  }
+<header class="flex justify-between px-3 py-5 bg-bellpuig-black text-white">
+  <a href="/">
+    <HomeIcon/>
+  </a>
+  <p class="font-bold text-xl text-bellpuig-orange">El Gran Porcaire</p>
+  <span></span>
 </header>

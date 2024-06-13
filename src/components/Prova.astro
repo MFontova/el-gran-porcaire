@@ -1,0 +1,17 @@
+---
+import { ViewTransitions } from 'astro:transitions'
+interface Props {
+  frontmatter: Record<string, any>
+  url: string
+}
+
+const { frontmatter, url } = Astro.props
+---
+
+<a class="h-full flex flex-col" href={url}>
+  <section class="border border-bellpuig-black rounded-md px-3 py-1 flex flex-col h-full justify-center">
+    <h2 transition:name="title" transition:animate="slide" class="text-center">{frontmatter.title}</h2>
+    <img src={frontmatter.image.url} />
+  </section>
+</a>
+<ViewTransitions/>

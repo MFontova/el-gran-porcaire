@@ -1,9 +1,12 @@
 ---
-import CustomButton from "../components/CustomButton.astro";
+import Prova from "../components/Prova.astro";
 import SectionText from "../components/SectionText.astro";
 import Layout from "../layouts/Layout.astro";
 
 const title = "Ampliació de la granja"
+
+const proves = await Astro.glob('./proves/*.md')
+console.log(proves[0].url)
 ---
 
 <Layout title={title}>
@@ -13,7 +16,13 @@ const title = "Ampliació de la granja"
 		<p>Però com ja saps, aquestes coses necessiten <span class="text-bellpuig-orange font-semibold">esforç</span>, <span class="text-bellpuig-orange font-semibold">suor</span> i <span class="text-bellpuig-orange font-semibold">calers</span>. Aquesta tarda et tocarà esforçar-te, suar i, qui sap, pot ser guanyar calers...</p>
 		<p>Estàs preparat per començar l'ampliació de la granja?</p>
 	</SectionText>
-	<div class="flex justify-center">
-		<CustomButton path="/p01-recaudar">No em fa por res</CustomButton>
+
+	<div class="grid grid-cols-2 gap-3">
+		{
+			proves
+				.sort((prova1, prova2) => prova1.frontmatter.order - prova2.frontmatter.order)
+				.map((prova) => <Prova frontmatter={prova.frontmatter} url={prova.url!} />)
+		}
 	</div>
+	
 </Layout>
