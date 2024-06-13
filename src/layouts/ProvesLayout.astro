@@ -6,7 +6,7 @@ const { frontmatter } = Astro.props
 ---
 <Layout title={frontmatter.title}>
   <h1>{frontmatter.title}</h1>
-  <img src={frontmatter.image.url} alt="">
+  <img transition:name="image" class="max-h-72 mx-auto my-5" src={frontmatter.image.url} alt="">
   <SectionText>
     <slot/>
   </SectionText>

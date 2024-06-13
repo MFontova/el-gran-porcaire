@@ -3,7 +3,7 @@ layout: ../../layouts/ProvesLayout.astro
 title: 'Contractar treballadors'
 order: 2
 image:
-  url: '/images/money.jpg'
+  url: '/images/treballadors.jpeg'
 ---
 
 Saps bé que una granja porta una feinada de por i amb l’equip que sou ara, **no teniu proutes mans** per poder treure endavant tota la feina que suposarà l’ampliació.

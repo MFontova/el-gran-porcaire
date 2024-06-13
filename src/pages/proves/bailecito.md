@@ -3,7 +3,7 @@ layout: ../../layouts/ProvesLayout.astro
 title: 'El bailecito relaxant'
 order: 6
 image:
-  url: '/images/money.jpg'
+  url: '/images/ballar.jpeg'
 ---
 
 Has tingut molta pressió amb tot aquest projecte i ara vols **relaxar-te una mica**. Decideixes sortir de festa i treure els **pasos prohibidos**.

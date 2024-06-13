@@ -16,7 +16,7 @@ const proves = await Astro.glob('./proves/*.md')
 		<p>Estàs preparat per començar l'ampliació de la granja?</p>
 	</SectionText>
 
-	<div class="grid grid-cols-2 gap-3">
+	<div class="grid grid-cols-2 gap-5">
 		{
 			proves
 				.sort((prova1, prova2) => prova1.frontmatter.order - prova2.frontmatter.order)
