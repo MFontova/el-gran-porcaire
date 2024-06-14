@@ -2,6 +2,7 @@
 layout: ../../layouts/ProvesLayout.astro
 title: 'El bailecito relaxant'
 order: 6
+id: 6
 image:
   url: '/images/ballar.jpeg'
 ---

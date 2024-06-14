@@ -2,6 +2,7 @@
 layout: ../../layouts/ProvesLayout.astro
 title: 'Punteria animalista'
 order: 3
+id: 3
 image:
   url: '/images/punteria.png'
 ---

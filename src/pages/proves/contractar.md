@@ -2,6 +2,7 @@
 layout: ../../layouts/ProvesLayout.astro
 title: 'Contractar treballadors'
 order: 2
+id: 2
 image:
   url: '/images/treballadors.jpeg'
 ---

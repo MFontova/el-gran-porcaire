@@ -2,6 +2,7 @@
 layout: ../../layouts/ProvesLayout.astro
 title: 'El porcaire més famós del món'
 order: 8
+id: 8
 image:
   url: '/images/porcOr.jpeg'
 ---

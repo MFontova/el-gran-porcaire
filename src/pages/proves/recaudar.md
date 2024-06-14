@@ -2,6 +2,7 @@
 layout: ../../layouts/ProvesLayout.astro
 title: 'Recaudar diners'
 order: 1
+id: 1
 image:
   url: '/images/recaudar.jpeg'
 ---

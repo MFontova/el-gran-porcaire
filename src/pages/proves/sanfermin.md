@@ -2,6 +2,7 @@
 layout: ../../layouts/ProvesLayout.astro
 title: 'San Fermín'
 order: 7
+id: 7
 image:
   url: '/images/sanfermin.jpeg'
 ---

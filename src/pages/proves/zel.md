@@ -2,6 +2,7 @@
 layout: ../../layouts/ProvesLayout.astro
 title: 'Les berres i el zel'
 order: 5
+id: 5
 image:
   url: '/images/cantar.jpeg'
 ---

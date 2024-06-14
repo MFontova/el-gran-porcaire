@@ -2,6 +2,7 @@
 layout: ../../layouts/ProvesLayout.astro
 title: 'Projecte firmat'
 order: 4
+id: 4
 image:
   url: '/images/projecte.png'
 ---
