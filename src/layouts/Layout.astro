@@ -19,6 +19,19 @@ const { title } = Astro.props
 		<title>{title}</title>
 		<GlobalStyles/>
 		<ViewTransitions/>
+		<script>
+			function init() {
+				const section = document.getElementById("section-text")
+				section?.addEventListener('click', (e) => {
+					console.log('justify text')
+					section.classList.contains('text-justify')
+						? section.classList.remove('text-justify')
+						: section?.classList.add('text-justify')
+				})
+			}
+			init()
+			document.addEventListener("astro:after-swap", init)
+		</script>
 	</head>
 	<body>
 		<Header/>
